@@ -48,6 +48,7 @@
     font-size: 24px;
 
 }
+
 /*********************************************************************/
 .container{
     /* background: blue; */
@@ -108,7 +109,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0 20px;
-    text-align: center;
+    text-align: start;
     position: relative;
 }
 .banner__data strong{
@@ -127,11 +128,18 @@
     top: 5px;
     right: 10px;
     border-radius: 100%;
+    
 }
+.banner__close i{
+    margin-top: 4px;
+}
+
 .banner__more{
+    width: 130px;
+    height: 30px;
     margin-top: 10px;
     border: none;
-    border-radius: 10px;
+    border-radius: 15px;
     font-family: "SF-Pro-Text-Bold";
     font-size: .8rem;
     color: var(--color-ternario);
