@@ -625,3 +625,108 @@
 }
 
 
+.banner{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    /* background: olivedrab; */
+    gap: 15px
+}
+
+.banner__publicidad{
+    width: 100%;
+    height: 140px;
+    /* background: #00388b; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .banner__logo{
+    /* background: greenyellow; 
+} **/
+.banner__logo img{
+    /* padding: 15px; */
+    height: 130px;
+}
+.banner__card{
+    width: 100vw;
+    height: 120px;
+    background: #E1FFEF;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    box-shadow: var(--color-shado-tranparent);
+}
+.banner__data{
+    width: 80%;
+    /* background: orange; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    text-align: start;
+    position: relative;
+}
+.banner__data strong{
+    font-family: "SF-Pro-Text-Bold";
+}
+.banner__data small{
+    font-family: "SF-Pro-Text-Regular";
+}
+.banner__close{
+    position: absolute;
+    background: var(--color-primary);
+    border: none;
+    color: var(--color-ternario);
+    width: 25px;
+    height: 25px;
+    top: 5px;
+    right: 10px;
+    margin-top: 5px;
+    border-radius: 100%;
+    
+}
+
+strong {
+    margin-top: 7px;
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+
+small{
+    font-size: 14px;
+    color: rgb(120, 125, 124);
+}
+
+.banner__close i{
+    margin-top: 4px;
+}
+
+.banner__more{
+    width: 130px;
+    height: 30px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 15px;
+    font-family: "SF-Pro-Text-Bold";
+    font-size: .8rem;
+    color: var(--color-ternario);
+    padding: 5px;
+    background: var(--color-primary);
+}
+
+.pay{
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.ima{
+    margin-top:150px;
+}
+
+.ima img {
+    width: 100%;
+    height: 160px;
+}
