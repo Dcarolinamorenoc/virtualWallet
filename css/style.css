@@ -5,3 +5,106 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
+
+.profile{
+    background: red;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+.profile__balance{
+    background: green;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.profile__titule{
+    background: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-transform:  capitalize;
+    color: var(--color-ternario);
+}
+.profile__titule h3{
+    font-size: 2em;
+    font-family: "SF-Pro-Text-Heavy.otf";
+}
+
+.profile__titule p{
+    font-size: 2.3em;
+    font-family: "SF-Pro-Text-Regular";
+}
+
+.profile__process{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    color: var(--color-ternario);
+}
+
+.profile__savings, .profile__assets{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.profile__savings small,
+.profile__assets small{
+    text-transform: uppercase;
+    font-size: .8em;
+    margin-bottom: 5px;
+}
+
+.profile__savings label,
+.profile__assets label{
+    font-family: "SF-Pro-Text-Semibold";
+    font-size: 1.3em;
+}
+
+.profile__savings progress,
+.profile__assets progress{
+    width: 100%;
+}
+
+.profile__savings progress[value] {
+    --color: var(--color-primary);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+.profile__assets progress[value] {
+    --color: var(--color-cuarto);
+    --background: var(--color-ternario);
+    background: var(--background);
+}
+
+progress[value] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    height: .5em;
+    border-radius: 10em;
+}
+
+.profile__savings progress[value]::-webkit-progress-bar,
+.profile__assets progress[value]::-webkit-progress-bar {
+    border-radius: 10em;
+    height: .5em;
+    background: var(--background);
+}
+
+progress[value]::-webkit-progress-value {
+    border-radius: 10em;
+    background: var(--color);
+}
+
+progress[value]::-moz-progress-bar {
+    border-radius: 10em;
+    background: var(--color);
+}
