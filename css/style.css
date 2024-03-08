@@ -188,6 +188,7 @@ progress[value]::-moz-progress-bar {
 
 .activities__carusel__img i {
     font-size: 2.5em;
+    margin-top: -35px;
 }
 
 .activities__carusel__img h4 {
@@ -198,7 +199,7 @@ progress[value]::-moz-progress-bar {
 /* ------------------------------------------------------------------------ */
 
 
-.transactionsç{
+.transactions{
     display: flex;
     flex-direction: column;
 }
@@ -323,4 +324,15 @@ progress[value]::-moz-progress-bar {
 .shopping__p{
     font-size: 14px;
     color: rgb(209, 209, 209);
+}
+
+
+.activities__title h4{
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.transactions__title h2{
+    font-size: 25px;
+    margin-left: 10px;
 }
