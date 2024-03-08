@@ -127,9 +127,22 @@
     height: 25px;
     top: 5px;
     right: 10px;
+    margin-top: 5px;
     border-radius: 100%;
     
 }
+
+strong {
+    margin-top: 7px;
+    font-size: 20px; 
+    margin-bottom: 5px;
+}
+
+small{
+    font-size: 14px;
+    color: rgb(120, 125, 124);
+}
+
 .banner__close i{
     margin-top: 4px;
 }
@@ -187,6 +200,34 @@
 }
 
 .carusel__img img{
+    left: 20px;
+    bottom: 20px;
+}
+
+.carusel__imge{
+    min-width: 55%;
+    min-height: 40vh;
+    background: url(../storage/img/cardLoad.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-ternario);
+}
+.carusel__imge small,
+.carusel__imge img{
+    position: absolute;
+}
+.carusel__imge small{
+    top: 20px;
+    right: 20px;
+}
+
+.carusel__imge img{
     left: 20px;
     bottom: 20px;
 }
