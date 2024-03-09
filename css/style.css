@@ -272,7 +272,7 @@ progress[value]::-moz-progress-bar {
     text-transform: capitalize;
     margin-left: 12px;
     font-family: "SF-pro-Text-Bold";
-    margin-bottom: 0px;
+    margin-bottom: 4px;
 }
 
 .profile__activities {
@@ -453,4 +453,5 @@ img.upArrow {
 .transactions__value small {
     margin-left: 10px; 
 }
+
 
