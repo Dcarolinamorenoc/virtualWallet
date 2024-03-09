@@ -15,9 +15,9 @@
 }
 
 :root{
-    --color-primary: #00DDA3;
-    --color-secundary: #33404F;
+    --color-primary: #4d8fbd;
+    --color-secundary: #4D596B;
     --color-ternario: #fff;
-    --color-cuarto: #B5C5C3;
+    --color-cuarto: #9ABFCF;
     --color-shado-transparent: 0px 0px 10px rgba(0, 0, 0, 0.416);
 }
