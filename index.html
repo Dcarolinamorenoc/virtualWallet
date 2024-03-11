@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INVETO</title>
+    <title>BitSecure</title>
     <script src="js/app.js" type="module" defer></script>
     <link rel="shortcut icon" href="storage/img/icono0.svg" type="image/svg">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -13,11 +13,11 @@
 <body>
     <header class="header">
         <div class="logo">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="90px" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M10.5 16a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0"/><path fill="currentColor" d="M17.526 5.116L14.347.659L2.658 9.997L2.01 9.99V10H1.5v12h21V10h-.962l-1.914-5.599zM19.425 10H9.397l7.469-2.546l1.522-.487zM15.55 5.79L7.84 8.418l6.106-4.878zM3.5 18.169v-4.34A3.008 3.008 0 0 0 5.33 12h13.34a3.009 3.009 0 0 0 1.83 1.83v4.34A3.009 3.009 0 0 0 18.67 20H5.332A3.01 3.01 0 0 0 3.5 18.169"/></svg>
-            <h1>Inveto</h1>
-        </div>
-        <div class="burger">
-            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200"><path fill="currentColor" d="M0 0v240h1200V0zm0 480v240h1200V480zm0 480v240h1200V960z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="90px" viewBox="0 0 24 24">
+                <path fill="#ffff" d="M12 12.5a3.5 3.5 0 1 0 0 7a3.5 3.5 0 0 0 0-7M10.5 16a1.5 1.5 0 1 1 3 0a1.5 1.5 0 0 1-3 0"/>
+                <path fill="#ffff" d="M17.526 5.116L14.347.659L2.658 9.997L2.01 9.99V10H1.5v12h21V10h-.962l-1.914-5.599zM19.425 10H9.397l7.469-2.546l1.522-.487zM15.55 5.79L7.84 8.418l6.106-4.878zM3.5 18.169v-4.34A3.008 3.008 0 0 0 5.33 12h13.34a3.009 3.009 0 0 0 1.83 1.83v4.34A3.009 3.009 0 0 0 18.67 20H5.332A3.01 3.01 0 0 0 3.5 18.169"/>
+              </svg>
+            <h1>BitSecure</h1>
         </div>
     </header>
     <main class="container">
@@ -28,12 +28,12 @@
             <article class="banner__publicidad">
                 <div class="banner__card">
                     <div class="banner__logo">
-                        <img src="storage/img/icono0.svg">
+                        <img src="storage/img/icon.svg">
                     </div>
                     <div class="banner__data">
-                        <button class="banner__close"><i class='bx bx-x'></i></button>
+                        <!-- <button class="banner__close"><i class='bx bx-x'></i></button> -->
                         <strong>What is an ETF?</strong>
-                        <small>By James B, PHD</small>
+                        <small class="author">By Carolina Moreno</small>
                         <button class="banner__more">Learn More</button>
                     </div>
                 </div>
@@ -43,23 +43,23 @@
      
         <section class="carusel">
             <article class="carusel__title">
-                <h3>My Cards (<span data-card="6"></span>)</h3>
+                <h3>My Cards (<span data-card="5"></span>)</h3>
             </article>
             <article class="carusel__card">
                 <div class="carusel__img">
                     <small>**** 0921</small>
                     <h2> $ 47,417</h2>
-                    <img src="storage/img/typeCard2.svg" alt="">
+                    <img src="/storage/img/typeCard2.svg" alt="">
                 </div>
                 <div class="carusel__imge">
                     <small>**** 0625</small>
                     <h2> $ 584,154</h2>
-                    <img src="storage/img/typeCard1.svg" alt="">
+                    <img src="/storage/img/typeCard1.svg" alt="">
                 </div>
                 <div class="carusel__im">
                     <small>**** 2003</small>
                     <h2> $ 98.342</h2>
-                    <img src="storage/img/typeCard2.svg" alt="">
+                    <img src="/storage/img/typeCard2.svg" alt="">
                 </div>
                 <div class="carusel__imge">
                     <small>**** 1212</small>
@@ -69,12 +69,7 @@
                 <div class="carusel__img">
                     <small>**** 6175</small>
                     <h2> $ 23.789</h2>
-                    <img src="storage/img/typeCard2.svg" alt="">
-                </div>
-                <div class="carusel__im">
-                    <small>**** 1504</small>
-                    <h2> $ 67.456</h2>
-                    <img src="storage/img/typeCard1.svg" alt="">
+                    <img src="/storage/img/typeCard2.svg" alt="">
                 </div>
             </article>
         </section>
@@ -82,19 +77,13 @@
     <nav class="menu">
         <ul>
             <li>
-                <a href="#"><i class='bx bx-home'></i></a>
+                <a href="views/balance.html"><i class='bx bxs-wallet'></i></a>
             </li>
             <li>
-                <a href="views/balance.html"><i class='bx bx-book-bookmark'></i></a>
+                <a href="../index.html"><i class='bx bxs-home'></i></a>
             </li>
             <li>
-                <a href="#"><i class='bx bx-grid-alt'></i></a>
-            </li>
-            <li>
-                <a href="#"><i class='bx bx-bell'></i></a>
-            </li>
-            <li>
-                <a href="views/profile.html"><i class='bx bx-user-circle'></i></a>
+                <a href="views/profile.html"><i class='bx bxs-user-pin'></i></a>
             </li>
         </ul>
     </nav>
