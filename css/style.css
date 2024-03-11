@@ -5,7 +5,11 @@
     box-sizing: border-box;
     font-family: "SF-Pro-Text-Regular";
 }
-
+body{
+    background-color: var(--color-secundary);
+    /* background-image: url("../storage/img/blue.svg");
+    background-size: cover; */
+}
 .header{
     display: grid;
     width: 100%;
@@ -180,7 +184,7 @@ small{
 .carusel__img{
     min-width: 55%;
     min-height: 40vh;
-    background: url(../storage/img/card.svg);
+    background: url(../storage/img/hola.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -205,10 +209,50 @@ small{
     bottom: 20px;
 }
 
+.carusel__im{
+    min-width: 55%;
+    min-height: 40vh;
+    background: url(../storage/img/sopa.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-ternario);
+}
+.carusel__im small,
+.carusel__im img{
+    position: absolute;
+}
+.carusel__im small{
+    top: 20px;
+    right: 20px;
+}
+
+.carusel__im img{
+    left: 20px;
+    bottom: 20px;
+}
+
+.carusel__im small{
+    color: var(--color-ternario);
+}
+
+.carusel__imge small{
+    color: var(--color-ternario);
+}
+
+.carusel__img small{
+    color: var(--color-ternario);
+}
+
 .carusel__imge{
     min-width: 55%;
     min-height: 40vh;
-    background: url(../storage/img/cardLoad.svg);
+    background: url(../storage/img/var.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
