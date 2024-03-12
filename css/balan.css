@@ -563,21 +563,21 @@ body{
     justify-content: flex-end;
 }
 
-    .Circle {
+.Circle {
     position: absolute;
-    background: #567389;
     width: 200px;
+    height: 200px;
     border-radius: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 200px;
     align-items: center;
     color: #FFFFFF;
     gap: 10px;
     margin-left: 24%;
     margin-top: -40vw;
     border: 5px solid #37455a;
+    background: linear-gradient(to right, #567389 50%, #516a7d 50%);
 }
 
 .Circle img {
@@ -652,6 +652,7 @@ body{
     background-color: #6f8799;
     margin-top: 9px;
     border-radius: 60px;
+    border: 8px solid #37455a;
 }
 /* .banner__logo{
     /* background: greenyellow; 
@@ -666,7 +667,7 @@ body{
     margin-top: 10px;
 }
 .banner__data{
-    width: 100%;
+    width: 600px;
     margin-left: 30px;
     /* background: orange; */
     display: flex;
@@ -675,6 +676,7 @@ body{
     padding: 0 20px;
     text-align: start;
     position: relative;
+    margin-top: -15px;
 }
 .banner__data strong{
     font-family: "SF-Pro-Text-Bold";
@@ -757,8 +759,6 @@ small{
     width: 100%;
     height: 80px;
     margin-top: 20px;
-    margin-right: 4px;
-    margin-left: -3px;
 }
 
 .menu{
@@ -804,3 +804,35 @@ small{
     }
 }
 
+.Buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Buttons_button1,
+.Buttons_button2,
+.Buttons_button3 {
+    overflow: hidden;
+}
+
+
+.Buttons_button1 button:hover,
+.Buttons_button2 button:hover,
+.Buttons_button3 button:hover {
+    transform: scale(1.1);
+}
+
+.banner__logo i {
+    font-size: 100px;
+    color: #3f5a6e;
+    margin-right: 40px;
+}
+
+.banner__logo i {
+    animation: fadeInOut 1.5s ease-in-out infinite; /* Animación de desvanecimiento */
+}
+
+@keyframes fadeInOut {
+    0%, 100% { opacity: 0; } /* Estado inicial y final: completamente transparente */
+    50% { opacity: 1; } /* Estado intermedio: completamente visible */
+}
