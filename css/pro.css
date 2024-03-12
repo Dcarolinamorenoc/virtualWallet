@@ -17,6 +17,9 @@
     object-fit: cover;
 } */
 
+body{
+    background: #404a65;
+}
 .bann{
     background: var(--color-secundary);
     position: absolute;
@@ -30,38 +33,35 @@
 }
 
 
-.header {
+.header{
     display: grid;
     width: 100%;
     height: 50px;
+    /* background: red; */
     padding: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    grid-template-areas: "logo burger";
-    background-color: rgba(0, 0, 0, 0); /* Cambiado a transparente utilizando rgba() */
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat (1,1fr);
+    margin-top: 2px;
+    grid-template-areas:
+    "logo burger"
 }
-
-.header .logo,
-        .header .burger {
-            color: white;
-        }
-        .header .logo h1 {
-            color: white;
-        }
-
 .logo{
     grid-area: logo;
-    gap: 10px;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 70px;
     /* */
-
-
 }
+
+.logo h1{
+    color: white;
+}
+
 .burger{
     grid-area: burger;
-    justify-content: flex-end;
-
+    justify-content: flex-end
 }
-
 .logo h1{
     font-size: 1.2rem;
     text-transform: uppercase;
@@ -80,6 +80,12 @@
 .logo i, .burger i{
     font-size: 24px;
 
+}
+
+.burger{
+    grid-area: burger;
+    color: white;
+    justify-content: flex-end;
 }
 
 /* *************************************** */
@@ -145,7 +151,7 @@
 
 
 .profile__activities{
-    background: var(--color-ternario);
+    background: #404a65;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     padding: 20px 10px;
@@ -267,12 +273,16 @@ progress[value]::-moz-progress-bar {
 
 .activities__title h4,
 .transactions__title h3{
-    background: rgb(255, 255, 255);
+    background: #404a65;
     font-size: 1.4rem;
     text-transform: capitalize;
     margin-left: 12px;
     font-family: "SF-pro-Text-Bold";
     margin-bottom: 4px;
+}
+
+.transactions{
+    background: #404a65;
 }
 
 .profile__activities {
@@ -304,9 +314,9 @@ progress[value]::-moz-progress-bar {
 .activities__carusel__img {
     min-width: 28%;
     min-height: 18vh;
-    background: var(--color-ternario);
+    background: #8f99b4;
     box-shadow: var(--color-shado-transparent);
-    border-radius: 10px;
+    border-radius: 20px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -344,7 +354,7 @@ progress[value]::-moz-progress-bar {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    background: white;
+    background: #404a65;
     height: 550px;
 }
 
@@ -356,6 +366,7 @@ progress[value]::-moz-progress-bar {
     gap: 15px;
     height: 55vh;
     overflow-y: scroll;
+    background-color: #404a65;
 }
 
 .transactions__carucel{
@@ -422,7 +433,7 @@ img.downArrow {
     width: 36px;
     height: 36px;
     display: flex;
-    background: var(--color-secundary);
+    background: var(--color-bluee);
     border-radius: 50%;
     padding: 8px;
     justify-content: center;
@@ -435,7 +446,7 @@ img.upArrow {
     width: 36px;
     height: 36px;
     display: flex;
-    background: var(--color-primary);
+    background: var(--color-blue);
     border-radius: 50%;
     padding: 8px;
     justify-content: center;
@@ -453,3 +464,28 @@ img.upArrow {
 .transactions__value small {
     margin-left: 10px; 
 }
+
+.profile__savings progress {
+    appearance: none; /* Oculta la apariencia predeterminada */
+    border-radius: 10px; 
+    background-color: #f0f0f0;
+    animation: fillProgress 3s ease-in-out forwards; /* Animación de llenado */
+}
+
+@keyframes fillProgress {
+    from { width: 0%; } /* Estado inicial: sin progreso */
+    to { width: 100%; } 
+}
+
+.profile__assets progress {
+    appearance: none; /* Oculta la apariencia predeterminada */
+    border-radius: 10px; 
+    background-color: #f0f0f0; /* Color de fondo */
+    animation: fillProgress 3s ease-in-out forwards; /* Animación de llenado */
+}
+
+@keyframes fillProgress {
+    from { width: 0%; } /* Estado inicial: sin progreso */
+    to { width: 100%; }
+}
+
